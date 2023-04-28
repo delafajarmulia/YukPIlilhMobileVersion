@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePwActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="@dimen/size_judul"
+        android:textColor="@color/black"
+        android:paddingTop="70dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/input_old_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="old password"
+        android:width="250dp"
+        android:height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+    <EditText
+        android:id="@+id/input_new_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="new password"
+        android:width="250dp"
+        android:height="60dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/input_confirm_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="confirm password"
+        android:width="250dp"
+        android:height="60dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btn_change_pw"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:text="Change Password"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
