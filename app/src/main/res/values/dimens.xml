@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="size_judul">25dp</dimen>
+    <dimen name="size_sub_judul">20dp</dimen>
     <dimen name="size_text">15dp</dimen>
+    <dimen name="default_padding">20dp</dimen>
 </resources>

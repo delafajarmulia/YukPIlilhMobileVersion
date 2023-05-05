@@ -8,29 +8,6 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yuk Pilih"
-            android:textSize="@dimen/size_judul"
-            android:textColor="@color/black"
-            android:layout_weight="21"/>
-        <Button
-            android:id="@+id/btn_logout"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:text="->"/>
-    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello, username"
-        android:textSize="@dimen/size_text"
-        android:textColor="@color/black"/>
 
 </LinearLayout>

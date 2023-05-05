@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.example.yukpilihpart2.models.GetUser;
@@ -25,12 +26,21 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLogin;
     private ApiInterface mApiInterface;
 
+    private EditText txtUsername, txtPassword;
+    private String username, password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mApiInterface = Credentials.getClient().create(ApiInterface.class);
+        txtUsername = findViewById(R.id.input_username);
+        txtPassword = findViewById(R.id.input_password);
+
+        username = txtUsername.getText().toString();
+        password = txtPassword.getText().toString();
+
+        mApiInterface = Credentials.getRetrofit().create(ApiInterface.class);
         refresh();
 
         btnLogin = findViewById(R.id.btn_login);

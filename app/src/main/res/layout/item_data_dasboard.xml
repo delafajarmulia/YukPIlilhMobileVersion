@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yuk Pilih"
+            android:textSize="@dimen/size_judul"
+            android:textColor="@color/black"
+            android:layout_weight="21"/>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="->"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello, username"
+        android:textSize="@dimen/size_text"
+        android:textColor="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_frame_in_dasboard"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_dasboard"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:stateListAnimator="@null"/>
+
+        <TextView
+            android:id="@+id/judul_vote_dasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="Pilih makanan favorit"
+            android:textColor="@color/agak_white"
+            android:textSize="@dimen/size_sub_judul"/>
+        <TextView
+            android:id="@+id/created_by_dasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="40dp"
+            android:text="Crated by :"
+            android:textColor="@color/agak_white"
+            android:textSize="@dimen/size_text"/>
+        <TextView
+            android:id="@+id/deadline_dasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="60dp"
+            android:text="Deadline :"
+            android:textColor="@color/agak_white"
+            android:textSize="@dimen/size_text"/>
+        <TextView
+            android:id="@+id/description_dasboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="80dp"
+            android:text="Apa makanan favoritmu?"
+            android:textColor="@color/agak_white"
+            android:textSize="@dimen/size_text"/>
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
