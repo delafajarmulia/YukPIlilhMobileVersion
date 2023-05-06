@@ -6,38 +6,16 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class GetUser {
-    @SerializedName("status")
-    @Expose
-    String status;
-    @SerializedName("result")
-    @Expose
-    List<User> userList;
-    @SerializedName("message")
-    @Expose
-    String message;
+    @SerializedName("id")
+    private int Id;
 
-    public String getStatus() {
-        return status;
+    public int getId() {
+        return Id;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setId(int id) {
+        Id = id;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public List<User> getUserList() {
-        return userList;
-    }
-
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
-    }
 
 }

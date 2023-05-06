@@ -17,8 +17,8 @@ public class Credentials {
 //            .retryOnConnectionFailure(true)
 //            .build();
 
-    public static final String BASE_URL = "https://localhost:7248/api/";
-    //public static final String BASE_URL = "http://10.0.2.2:7248/api/";
+    //public static final String BASE_URL = "https://reqres.in/api/";
+    public static final String BASE_URL = "http://10.0.2.2:5043/api/";
     private static Retrofit retrofit = null;
     public static Retrofit getRetrofit(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
@@ -29,7 +29,6 @@ public class Credentials {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
-                    .client(client)
                     .build();
 
             //private static ApiInterface apiInterface = retrofit.create(ApiInterface.class);

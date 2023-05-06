@@ -7,23 +7,18 @@ import java.text.DateFormat;
 
 public class User {
     @SerializedName("id")
-    @Expose
     private int Id;
 
     @SerializedName("username")
-    @Expose
     private String Username;
 
     @SerializedName("password")
-    @Expose
     private String Password;
 
     @SerializedName("role")
-    @Expose
     private String Role;
 
     @SerializedName("token")
-    @Expose
     private String Token;
 
     public User(int id, String username, String password, String role, String token) {
